@@ -48,3 +48,18 @@ Feature: 初始化管理员
     When 初始化管理员
     Then 使用管理员登录失败1
 ```
+## 上传文件用法
+```
+const axios = require('axios');
+const FormData = require('form-data');
+const fs = require('fs');
+.....
+//将位于test_data目录下的xls文件通过接口导入到系统
+async function importFile(file) {
+    const formData = new FormData();
+    formData.append("file", fs.createReadStream('./test_data/' + file));
+    await axios.post(getUrl('/dbtool/import'), formData, {
+        headers: formData.getHeaders()
+    })
+}
+```
