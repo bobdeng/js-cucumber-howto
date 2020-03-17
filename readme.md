@@ -10,7 +10,8 @@
 - axios 网络访问
 - fs 本地文件读取
 - form-data 用来构造上传文件的表单
-
+- cpress 提供一个无界面的浏览器引擎用来测试Web
+- cypress-cucumber-preprocessor cypress支持cucumber的库
 ## 增加test指令
 在package.json中，修改script中的test为："node ./node_modules/.bin/cucumber-js"
 ## 编写测试
