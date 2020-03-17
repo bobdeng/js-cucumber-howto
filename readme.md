@@ -1,6 +1,7 @@
 # Webstorm 使用Js+cucumber做ATDD
 ## 新建工程
   新建一个Nodejs工程
+  ![](images/create_project.png)
 ## 必用类库
 - cucumber 提供Given/When/Then的测试DSL和解析
 - chai 提供断言功能
