@@ -25,6 +25,7 @@
     Then XXXX
 ```
   光标停留在Given/When/Then那一行上，点击提示的warning，可以选择'create step defintion'，选中后可以生成一个js文件，如下
+  ![](images/create_step.png)
 ```
   Then(/^使用管理员登录成功$/, async function () {
     let resp = await axios.post(getUrl('/auth/login'), {
